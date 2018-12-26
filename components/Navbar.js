@@ -46,9 +46,9 @@ const Navbar = (props) => {
     <div style={styles.root}>
       <AppBar style={!props.isHome ? styles.homeNavBar : styles.navBar} position="static">        
         <div style={{'flex':'1'}}></div>
-        <Link href={`/research`}>
+        {/* <Link href={`/research`}>
           <a style={styles.navLink}>Some Link</a>
-        </Link>
+        </Link> */}
       </AppBar>
     </div>
   );
