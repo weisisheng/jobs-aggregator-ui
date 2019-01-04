@@ -12,12 +12,15 @@ class SearchInput extends Component {
 
   render() {
     return (
+      <form>
       <TextField
         style={{'width':'500px'}}
         value={this.state.searchQuery}
         onChange={ this.handleSearchChange }
         label="Search by keyword or location"
-    />
+      />
+      <button onClick={(event) => this.props.onSearch(event, this.state.searchQuery)}>Submit</button>
+      </form>
     )
   }
 

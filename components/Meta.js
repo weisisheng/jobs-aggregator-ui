@@ -8,7 +8,7 @@ export default class Meta extends Component{
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <title>{this.props.title ? this.props.title : 'Eleruum'}</title>
+        <title>{this.props.title ? this.props.title : 'ESL Bot Aggregator'}</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
       </Head>
       <style jsx global>{`

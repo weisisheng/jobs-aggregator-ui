@@ -45,10 +45,15 @@ const Navbar = (props) => {
   return (
     <div style={styles.root}>
       <AppBar style={!props.isHome ? styles.homeNavBar : styles.navBar} position="static">        
-        <div style={{'flex':'1'}}></div>
-        {/* <Link href={`/research`}>
-          <a style={styles.navLink}>Some Link</a>
-        </Link> */}
+      <Link href={`/`}>
+          <a style={styles.navLink}><strong>ESL Bot</strong></a>
+        </Link>        <div style={{'flex':'1'}}></div>
+        <Link href={`/about`}>
+          <a style={styles.navLink}>About</a>
+        </Link>
+        <Link href={`http://forums.eslbot.com`}>
+          <a target="_blank" style={styles.navLink}>Forums</a>
+        </Link>
       </AppBar>
     </div>
   );

@@ -6,16 +6,39 @@ import JobList from '../components/JobList';
 import SearchInput from '../components/SearchInput';
 
 class Index extends Component {
+  state = {
+    data: this.props.data,
+  }
+
+  onSearch = (event, query) => {
+    event.preventDefault();
+    fetch('http://144.202.96.77:4000/search?param=' + query, {
+      headers: {
+        Accept: 'application/json'
+      }
+    })
+    .then(response => {
+      return response.json()
+    })
+    .then(json => {
+      this.setState({ data: json })
+    })
+    .catch(error => console.log(error))
+  }
+
   render() {
     return (
       <div>
         <Meta />
         <Layout>
         <div style={{'textAlign':'center'}}>
-          <SearchInput style={{'textAlign':'center'}}/>
-          <p>We found {this.props.data.length} jobs</p>
+          <SearchInput 
+            style={{'textAlign':'center'}}
+            onSearch={this.onSearch}
+            />
+          <p>We found {this.state.data.length} jobs</p>
         </div>
-        <JobList data={this.props.data} />
+        <JobList data={this.state.data} />
         </Layout>
       </div>
     )
