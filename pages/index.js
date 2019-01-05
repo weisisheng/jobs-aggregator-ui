@@ -4,29 +4,54 @@ import fetch from 'isomorphic-unfetch'
 import React, { Component } from 'react';
 import JobList from '../components/JobList';
 import SearchInput from '../components/SearchInput';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 class Index extends Component {
   state = {
     data: this.props.data,
+    loading: false,
   }
 
   onSearch = (event, query) => {
+    this.setState({ loading: true })
     event.preventDefault();
-    fetch('https://api.eslbot.com/search?param=' + query, {
-      headers: {
-        Accept: 'application/json'
-      }
-    })
-    .then(response => {
-      return response.json()
-    })
-    .then(json => {
-      this.setState({ data: json })
-    })
-    .catch(error => console.log(error))
+    if (query !== '') {
+      fetch('https://api.eslbot.com/search?param=' + query, {
+        headers: {
+          Accept: 'application/json'
+        }
+      })
+      .then(response => {
+        return response.json()
+      })
+      .then(json => {
+        json.sort((a,b) => (a.dateAdded < b.dateAdded) ? 1 : ((b.dateAdded < a.dateAdded) ? -1 : 0)); 
+        this.setState({ data: json, loading: false })
+      })
+      .catch(error => console.log(error))
+    } else {
+      fetch('http://144.202.96.77:3000/api/jobs', {
+        headers: {
+          Accept: 'application/json'
+        }
+      })
+      .then(response => {
+        return response.json()
+      })
+      .then(json => {
+        json.sort((a,b) => (a.dateAdded < b.dateAdded) ? 1 : ((b.dateAdded < a.dateAdded) ? -1 : 0)); 
+        this.setState({ data: json, loading: false })
+      })
+      .catch(error => console.log(error))
+    }
   }
 
   render() {
+    const loading = (
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+        <CircularProgress />
+      </div>
+    )
     return (
       <div>
         <Meta />
@@ -38,7 +63,7 @@ class Index extends Component {
             />
           <p>We found {this.state.data.length} jobs</p>
         </div>
-        <JobList data={this.state.data} />
+        { this.state.loading ? loading : <JobList data={this.state.data} /> }
         </Layout>
       </div>
     )

@@ -14,10 +14,10 @@ const styles = {
   },
   navLink: {
     textDecoration: 'none',
-    fontSize: 16,
+    fontSize: 18,
     padding: '10px',
-    color: 'white',
-    textShadow: '1px 1px 2px rgba(0,0,0, 0.5)'
+    color: 'black',
+    fontWeight: 'bold',
   },
   icon: {
     textDecoration: 'none',
@@ -29,30 +29,32 @@ const styles = {
   navBar: {
     flexDirection: 'row',
     padding: 10,
-    background: 'transparent',
-    boxShadow: 'none'
+    backgroundColor: 'white',
+    boxShadow: 'none',
+    color: 'black',
   },
   homeNavBar: {
     flexDirection: 'row',
     padding: 10,
-    background: '#0074D9',
-    boxShadow: 'none'
+    background: 'white',
+    boxShadow: '1px gray',
+    marginBottom: '10px',
+    color: 'black',
   }
 };
 
 const Navbar = (props) => {
-  const { classes } = props;
   return (
     <div style={styles.root}>
       <AppBar style={!props.isHome ? styles.homeNavBar : styles.navBar} position="static">        
       <Link href={`/`}>
-          <a style={styles.navLink}><strong>ESL Bot</strong></a>
+          <a style={styles.navLink}><strong><span>esl</span><span style={{'color':'#2196f3'}}>bot</span></strong></a>
         </Link>        <div style={{'flex':'1'}}></div>
         <Link href={`/about`}>
-          <a style={styles.navLink}>About</a>
+          <a style={styles.navLink}>about</a>
         </Link>
         <Link href={`http://forums.eslbot.com`}>
-          <a target="_blank" style={styles.navLink}>Forums</a>
+          <a target="_blank" style={styles.navLink}>forums</a>
         </Link>
       </AppBar>
     </div>

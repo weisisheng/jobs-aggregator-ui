@@ -1,6 +1,26 @@
 import React, { Component } from 'react';
-import TextField from '@material-ui/core/TextField';
 
+const styles = {
+  input: {
+    width: '300px',
+    backgroundColor: 'white',
+    outline: 'none',
+    border: 'none',
+    borderBottom: '2px solid black',
+    marginRight: '10px',
+    paddingBottom: '4px',
+    fontSize: '16px',
+  },
+  button: {
+    height: '32px',
+    border: 'none',
+    borderRadius: '2px',
+    paddingRight: '24px',
+    paddingLeft: '24px',
+    fontSize: '16px',
+    fontWeight: 'bold',
+  }
+}
 class SearchInput extends Component {
   state = {
     searchQuery: '',
@@ -13,13 +33,13 @@ class SearchInput extends Component {
   render() {
     return (
       <form>
-      <TextField
-        style={{'width':'500px'}}
-        value={this.state.searchQuery}
-        onChange={ this.handleSearchChange }
-        label="Search by keyword or location"
-      />
-      <button onClick={(event) => this.props.onSearch(event, this.state.searchQuery)}>Submit</button>
+        <input
+          style={styles.input}
+          value={this.state.searchQuery}
+          onChange={ this.handleSearchChange }
+          placeholder="Search by keyword, city, or country"
+        />
+        <button style={styles.button} onClick={(event) => this.props.onSearch(event, this.state.searchQuery)}>Search</button>
       </form>
     )
   }

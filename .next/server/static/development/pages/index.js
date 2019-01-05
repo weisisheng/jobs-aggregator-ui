@@ -118,7 +118,7 @@ var jobList = function jobList(props) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       key: el.link,
       style: {
-        'margin': '10px 0 10px 0'
+        'margin': '10px 10px 10px 10px'
       },
       __source: {
         fileName: _jsxFileName,
@@ -135,7 +135,8 @@ var jobList = function jobList(props) {
       href: el.link,
       target: "_blank",
       style: {
-        'textDecoration': 'none'
+        'textDecoration': 'none',
+        'fontSize': '18px'
       },
       __source: {
         fileName: _jsxFileName,
@@ -150,7 +151,7 @@ var jobList = function jobList(props) {
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       style: {
-        'fontSize': '12px'
+        'fontSize': '14px'
       },
       __source: {
         fileName: _jsxFileName,
@@ -165,8 +166,9 @@ var jobList = function jobList(props) {
       __self: this
     }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       style: {
-        'fontSize': '10px',
-        'paddingRight': '6px'
+        'fontSize': '12px',
+        'paddingRight': '6px',
+        'fontWeight': 'bold'
       },
       __source: {
         fileName: _jsxFileName,
@@ -176,6 +178,7 @@ var jobList = function jobList(props) {
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       href: el.websiteLink,
       style: {
+        'color': 'black',
         'textDecoration': 'none'
       },
       target: "_blank",
@@ -186,7 +189,7 @@ var jobList = function jobList(props) {
       __self: this
     }, el.website)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       style: {
-        'fontSize': '10px'
+        'fontSize': '12px'
       },
       __source: {
         fileName: _jsxFileName,
@@ -347,9 +350,29 @@ function (_Component) {
           lineNumber: 12
         },
         __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
+        rel: "icon",
+        hhref: "../favicon.ico",
+        type: "image/x-icon",
+        className: "jsx-4226137280",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
+        rel: "shortcut icon",
+        href: "../favicon.ico",
+        type: "image/x-icon",
+        className: "jsx-4226137280",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
       })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
         styleId: "4226137280",
-        css: "body{padding:0px;margin:0px;font-family:'Helvetica';}button:focus{outline:none;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3JvYm90L1Byb2plY3RzL2pvYnMvdWkvY29tcG9uZW50cy9NZXRhLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWF5QixBQUd1QixBQUtDLFlBSkYsQ0FLYixVQUowQix3QkFDMUIiLCJmaWxlIjoiL2hvbWUvcm9ib3QvUHJvamVjdHMvam9icy91aS9jb21wb25lbnRzL01ldGEuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5pbXBvcnQgUmVhY3QsIHsgQ29tcG9uZW50IH0gZnJvbSAncmVhY3QnO1xuXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBNZXRhIGV4dGVuZHMgQ29tcG9uZW50e1xuICByZW5kZXIoKSB7XG4gICAgcmV0dXJuIChcbiAgICAgIDxkaXY+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgICAgPG1ldGEgY2hhclNldD1cInV0Zi04XCIgLz5cbiAgICAgICAgPHRpdGxlPnt0aGlzLnByb3BzLnRpdGxlID8gdGhpcy5wcm9wcy50aXRsZSA6ICdFU0wgQm90IEFnZ3JlZ2F0b3InfTwvdGl0bGU+XG4gICAgICAgIDxsaW5rIHJlbD1cInN0eWxlc2hlZXRcIiBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9pY29uP2ZhbWlseT1NYXRlcmlhbCtJY29uc1wiIC8+XG4gICAgICA8L0hlYWQ+XG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICBib2R5IHsgXG4gICAgICAgICAgcGFkZGluZzogMHB4O1xuICAgICAgICAgIG1hcmdpbjogMHB4O1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiAnSGVsdmV0aWNhJztcbiAgICAgICAgfVxuICAgICAgICBidXR0b246Zm9jdXMge1xuICAgICAgICAgIG91dGxpbmU6IG5vbmU7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgICApXG4gIH1cbn0iXX0= */\n/*@ sourceURL=/home/robot/Projects/jobs/ui/components/Meta.js */",
+        css: "body{padding:0px;margin:0px;font-family:'Helvetica';}button:focus{outline:none;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3JvYm90L1Byb2plY3RzL2pvYnMvdWkvY29tcG9uZW50cy9NZXRhLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWV5QixBQUd1QixBQUtDLFlBSkYsQ0FLYixVQUowQix3QkFDMUIiLCJmaWxlIjoiL2hvbWUvcm9ib3QvUHJvamVjdHMvam9icy91aS9jb21wb25lbnRzL01ldGEuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnXG5pbXBvcnQgUmVhY3QsIHsgQ29tcG9uZW50IH0gZnJvbSAncmVhY3QnO1xuXG5leHBvcnQgZGVmYXVsdCBjbGFzcyBNZXRhIGV4dGVuZHMgQ29tcG9uZW50e1xuICByZW5kZXIoKSB7XG4gICAgcmV0dXJuIChcbiAgICAgIDxkaXY+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgICAgPG1ldGEgY2hhclNldD1cInV0Zi04XCIgLz5cbiAgICAgICAgPHRpdGxlPnt0aGlzLnByb3BzLnRpdGxlID8gdGhpcy5wcm9wcy50aXRsZSA6ICdFU0wgQm90IEFnZ3JlZ2F0b3InfTwvdGl0bGU+XG4gICAgICAgIDxsaW5rIHJlbD1cInN0eWxlc2hlZXRcIiBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9pY29uP2ZhbWlseT1NYXRlcmlhbCtJY29uc1wiIC8+XG4gICAgICAgIDxsaW5rIHJlbD1cImljb25cIiBoaHJlZj1cIi4uL2Zhdmljb24uaWNvXCIgdHlwZT1cImltYWdlL3gtaWNvblwiLz5cbiAgICAgICAgPGxpbmsgcmVsPVwic2hvcnRjdXQgaWNvblwiIGhyZWY9XCIuLi9mYXZpY29uLmljb1wiIHR5cGU9XCJpbWFnZS94LWljb25cIi8+XG4gICAgICA8L0hlYWQ+XG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICBib2R5IHsgXG4gICAgICAgICAgcGFkZGluZzogMHB4O1xuICAgICAgICAgIG1hcmdpbjogMHB4O1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiAnSGVsdmV0aWNhJztcbiAgICAgICAgfVxuICAgICAgICBidXR0b246Zm9jdXMge1xuICAgICAgICAgIG91dGxpbmU6IG5vbmU7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgICApXG4gIH1cbn0iXX0= */\n/*@ sourceURL=/home/robot/Projects/jobs/ui/components/Meta.js */",
         __self: this
       }));
     }
@@ -394,10 +417,10 @@ var styles = {
   },
   navLink: {
     textDecoration: 'none',
-    fontSize: 16,
+    fontSize: 18,
     padding: '10px',
-    color: 'white',
-    textShadow: '1px 1px 2px rgba(0,0,0, 0.5)'
+    color: 'black',
+    fontWeight: 'bold'
   },
   icon: {
     textDecoration: 'none',
@@ -409,24 +432,26 @@ var styles = {
   navBar: {
     flexDirection: 'row',
     padding: 10,
-    background: 'transparent',
-    boxShadow: 'none'
+    backgroundColor: 'white',
+    boxShadow: 'none',
+    color: 'black'
   },
   homeNavBar: {
     flexDirection: 'row',
     padding: 10,
-    background: '#0074D9',
-    boxShadow: 'none'
+    background: 'white',
+    boxShadow: '1px gray',
+    marginBottom: '10px',
+    color: 'black'
   }
 };
 
 var Navbar = function Navbar(props) {
-  var classes = props.classes;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: styles.root,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 48
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -434,57 +459,72 @@ var Navbar = function Navbar(props) {
     position: "static",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 50
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     style: styles.navLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 51
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 51
     },
     __self: this
-  }, "ESL Bot"))), "        ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }, "esl"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    style: {
+      'color': '#2196f3'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }, "bot")))), "        ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       'flex': '1'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 52
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     style: styles.navLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 54
     },
     __self: this
-  }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, "about")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "http://forums.eslbot.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 56
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -492,10 +532,10 @@ var Navbar = function Navbar(props) {
     style: styles.navLink,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 57
     },
     __self: this
-  }, "Forums"))));
+  }, "forums"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
@@ -513,8 +553,6 @@ var Navbar = function Navbar(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/TextField */ "@material-ui/core/TextField");
-/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "/home/robot/Projects/jobs/ui/components/SearchInput.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -538,7 +576,27 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
-
+var styles = {
+  input: {
+    width: '300px',
+    backgroundColor: 'white',
+    outline: 'none',
+    border: 'none',
+    borderBottom: '2px solid black',
+    marginRight: '10px',
+    paddingBottom: '4px',
+    fontSize: '16px'
+  },
+  button: {
+    height: '32px',
+    border: 'none',
+    borderRadius: '2px',
+    paddingRight: '24px',
+    paddingLeft: '24px',
+    fontSize: '16px',
+    fontWeight: 'bold'
+  }
+};
 
 var SearchInput =
 /*#__PURE__*/
@@ -579,31 +637,30 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 35
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_1___default.a, {
-        style: {
-          'width': '500px'
-        },
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        style: styles.input,
         value: this.state.searchQuery,
         onChange: this.handleSearchChange,
-        label: "Search by keyword or location",
+        placeholder: "Search by keyword, city, or country",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 36
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        style: styles.button,
         onClick: function onClick(event) {
           return _this2.props.onSearch(event, _this2.state.searchQuery);
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 42
         },
         __self: this
-      }, "Submit"));
+      }, "Search"));
     }
   }]);
 
@@ -633,6 +690,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _components_JobList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/JobList */ "./components/JobList.js");
 /* harmony import */ var _components_SearchInput__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/SearchInput */ "./components/SearchInput.js");
+/* harmony import */ var _material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/CircularProgress */ "@material-ui/core/CircularProgress");
+/* harmony import */ var _material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_7__);
 
 var _jsxFileName = "/home/robot/Projects/jobs/ui/pages/index.js";
 
@@ -667,6 +726,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 var Index =
 /*#__PURE__*/
 function (_Component) {
@@ -686,24 +746,56 @@ function (_Component) {
     _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Index)).call.apply(_getPrototypeOf2, [this].concat(args)));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "state", {
-      data: _this.props.data
+      data: _this.props.data,
+      loading: false
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "onSearch", function (event, query) {
-      event.preventDefault();
-      isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('http://144.202.96.77:4000/search?param=' + query, {
-        headers: {
-          Accept: 'application/json'
-        }
-      }).then(function (response) {
-        return response.json();
-      }).then(function (json) {
-        _this.setState({
-          data: json
-        });
-      }).catch(function (error) {
-        return console.log(error);
+      _this.setState({
+        loading: true
       });
+
+      event.preventDefault();
+
+      if (query !== '') {
+        isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('https://api.eslbot.com/search?param=' + query, {
+          headers: {
+            Accept: 'application/json'
+          }
+        }).then(function (response) {
+          return response.json();
+        }).then(function (json) {
+          json.sort(function (a, b) {
+            return a.dateAdded < b.dateAdded ? 1 : b.dateAdded < a.dateAdded ? -1 : 0;
+          });
+
+          _this.setState({
+            data: json,
+            loading: false
+          });
+        }).catch(function (error) {
+          return console.log(error);
+        });
+      } else {
+        isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('http://144.202.96.77:3000/api/jobs', {
+          headers: {
+            Accept: 'application/json'
+          }
+        }).then(function (response) {
+          return response.json();
+        }).then(function (json) {
+          json.sort(function (a, b) {
+            return a.dateAdded < b.dateAdded ? 1 : b.dateAdded < a.dateAdded ? -1 : 0;
+          });
+
+          _this.setState({
+            data: json,
+            loading: false
+          });
+        }).catch(function (error) {
+          return console.log(error);
+        });
+      }
     });
 
     return _this;
@@ -712,22 +804,39 @@ function (_Component) {
   _createClass(Index, [{
     key: "render",
     value: function render() {
+      var loading = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+        style: {
+          display: 'flex',
+          justifyContent: 'center'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52
+        },
+        __self: this
+      }));
       return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 57
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
@@ -736,7 +845,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 59
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_SearchInput__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -746,20 +855,20 @@ function (_Component) {
         onSearch: this.onSearch,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 60
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 64
         },
         __self: this
-      }, "We found ", this.state.data.length, " jobs")), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_JobList__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, "We found ", this.state.data.length, " jobs")), this.state.loading ? loading : react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_JobList__WEBPACK_IMPORTED_MODULE_5__["default"], {
         data: this.state.data,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 66
         },
         __self: this
       })));
@@ -790,7 +899,7 @@ _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function 
         case 5:
           data = _context.sent;
           return _context.abrupt("return", {
-            data: data
+            data: data.reverse()
           });
 
         case 7:
@@ -838,14 +947,14 @@ module.exports = require("@material-ui/core/AppBar");
 
 /***/ }),
 
-/***/ "@material-ui/core/TextField":
-/*!**********************************************!*\
-  !*** external "@material-ui/core/TextField" ***!
-  \**********************************************/
+/***/ "@material-ui/core/CircularProgress":
+/*!*****************************************************!*\
+  !*** external "@material-ui/core/CircularProgress" ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/TextField");
+module.exports = require("@material-ui/core/CircularProgress");
 
 /***/ }),
 

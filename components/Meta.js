@@ -10,6 +10,8 @@ export default class Meta extends Component{
         <meta charSet="utf-8" />
         <title>{this.props.title ? this.props.title : 'ESL Bot Aggregator'}</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="icon" hhref="../favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
       </Head>
       <style jsx global>{`
         body { 
