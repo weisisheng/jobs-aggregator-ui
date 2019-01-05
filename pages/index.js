@@ -8,6 +8,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 
 class Index extends Component {
   state = {
+    originalData: this.props.data,
     data: this.props.data,
     loading: false,
   }
@@ -30,19 +31,7 @@ class Index extends Component {
       })
       .catch(error => console.log(error))
     } else {
-      fetch('http://144.202.96.77:3000/api/jobs', {
-        headers: {
-          Accept: 'application/json'
-        }
-      })
-      .then(response => {
-        return response.json()
-      })
-      .then(json => {
-        json.sort((a,b) => (a.dateAdded < b.dateAdded) ? 1 : ((b.dateAdded < a.dateAdded) ? -1 : 0)); 
-        this.setState({ data: json, loading: false })
-      })
-      .catch(error => console.log(error))
+      this.setState({ data: this.state.originalData, loading: false })
     }
   }
 
