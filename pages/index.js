@@ -12,7 +12,7 @@ class Index extends Component {
 
   onSearch = (event, query) => {
     event.preventDefault();
-    fetch('http://144.202.96.77:4000/search?param=' + query, {
+    fetch('https://api.eslbot.com/search?param=' + query, {
       headers: {
         Accept: 'application/json'
       }
@@ -49,7 +49,7 @@ Index.getInitialProps = async function() {
   const res = await fetch('http://144.202.96.77:3000/api/jobs')
   const data = await res.json()
   return {
-    data: data
+    data: data.reverse()
   }
 }
 
