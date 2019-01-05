@@ -49,10 +49,8 @@ const Navbar = (props) => {
       <AppBar style={!props.isHome ? styles.homeNavBar : styles.navBar} position="static">        
       <Link href={`/`}>
           <a style={styles.navLink}><strong><span>esl</span><span style={{'color':'#2196f3'}}>bot</span></strong></a>
-        </Link>        <div style={{'flex':'1'}}></div>
-        <Link href={`/about`}>
-          <a style={styles.navLink}>about</a>
-        </Link>
+        </Link>        
+        <div style={{'flex':'1'}}></div>
         <Link href={`http://forums.eslbot.com`}>
           <a target="_blank" style={styles.navLink}>forums</a>
         </Link>
