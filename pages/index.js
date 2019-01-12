@@ -60,7 +60,7 @@ class Index extends Component {
 }
 
 Index.getInitialProps = async function() {
-  const res = await fetch('http://144.202.96.77:3000/api/jobs')
+  const res = await fetch('http://144.202.96.77:3000/api/jobs?access_token=' + process.env.TOKEN)
   const data = await res.json()
   return {
     data: data.reverse()
