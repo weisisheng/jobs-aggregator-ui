@@ -11,7 +11,7 @@ class SearchInput extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{'marginTop':'50px'}}>
         <form>
           <input
             value={this.state.searchQuery}
@@ -46,6 +46,7 @@ class SearchInput extends Component {
               padding-left: 24px;
               font-size: 16px;
               font-weight: bold;
+              background-color: gray;
             }
             @media (max-width: 600px) {
               input {
