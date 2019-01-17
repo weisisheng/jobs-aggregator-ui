@@ -23,10 +23,15 @@ class SearchInput extends Component {
               width: 300px;
               outline: none;
               border: none;
-              border-bottom: 2px solid black;
+              border-bottom: 2px solid #AAAAAA;
               margin-right: 10px;
               padding-bottom: 4px;
               font-size: 16px;
+              transition: border-bottom .25s;
+            }
+            input:hover {
+              border-bottom: 2px solid #111111;
+              transition: border-bottom .25s;
             }
             @media (max-width: 600px) {
               input {
@@ -46,7 +51,13 @@ class SearchInput extends Component {
               padding-left: 24px;
               font-size: 16px;
               font-weight: bold;
-              background-color: gray;
+              background-color: #0074D9;
+              color: #DDDDDD;
+              transition: color .25s;
+            }
+            button:hover {
+              color: white;
+              transition: color .25s;
             }
             @media (max-width: 600px) {
               input {

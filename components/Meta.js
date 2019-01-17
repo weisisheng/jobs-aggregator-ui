@@ -8,9 +8,8 @@ export default class Meta extends Component{
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <title>{this.props.title ? this.props.title : 'ESL Bot Aggregator'}</title>
+        <title>{this.props.title ? this.props.title : 'ESL Bot Jobs Aggregator'}</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-        <link rel="icon" hhref="../favicon.ico" type="image/x-icon"/>
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
       </Head>
       <style jsx global>{`

@@ -1,18 +1,25 @@
 const styles = {
-  navLink: {
+  navLeft: {
     textDecoration: 'none',
     fontSize: 18,
     padding:  '16px',
-    color: 'gray',
+    color: '#0074D9',
     fontWeight: 'bold',
+    float: 'left',
+    pointer: 'none',
+  },
+  navRight: {
+    textDecoration: 'none',
+    fontSize: 18,
+    padding:  '16px',
+    color: '#0074D9',
+    fontWeight: 'bold',
+    float: 'right',
+    cursor: 'pointer',
   },
   navBar: {
-    flexDirection: 'row',
     backgroundColor: 'white',
     color: 'black',
-    display: 'flex',
-    position: 'fixed',
-    top: 0,
     height: '50px',
     borderBottomColor: 'gray',
     borerBottomWidth: '1px',
@@ -23,7 +30,8 @@ const styles = {
 const Navbar = (props) => {
   return (
     <nav style={styles.navBar}>
-      <a href="https://forums.eslbot.com" target="_blank" rel="noopener" style={styles.navLink}>forums</a>
+      <a target="_blank" rel="noopener" style={styles.navLeft}>eslbot</a>
+      <a href="https://forums.eslbot.com" target="_blank" rel="noopener" style={styles.navRight}>forums</a>
     </nav>
   );
 }
